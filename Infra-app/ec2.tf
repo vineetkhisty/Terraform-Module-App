@@ -1,6 +1,6 @@
 resource "aws_key_pair" "my_key_new" {
     key_name   = "${var.env}-infra-app-key"
-    public_key = file("~/.ssh/id_rsa.pub")
+    public_key = file("terra-key-ec2.pub")
   
   tags = {
     Environment = var.env
