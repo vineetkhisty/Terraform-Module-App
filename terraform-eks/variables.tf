@@ -1,0 +1,10 @@
+locals {
+  region = "us-east-2"
+  name   = "tws-eks-practice-vineet"
+  vpc_cidr = "10.0.0.0/16"
+  public_subnet_cidrs = ["10.0.101.0/24", "10.0.102.0/24"]
+  private_subnet_cidrs = ["10.0.201.0/24", "10.0.202.0/24"]
+  availability_zones = ["us-east-2a", "us-east-2b"]
+  env = "dev"
+}
+
